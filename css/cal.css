@@ -1,0 +1,47 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgoldenrodyellow;
+    padding:  5rem 35rem;
+}
+.calelements {
+    background-color: lightcoral;
+    border-radius: 5px;
+    height: 30rem;
+    width: 30rem;
+    display:flex;
+    gap: 20px;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    align-content: center;
+    
+}
+h1{
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform:uppercase;
+   padding-left: 2rem;
+   
+}
+.elements {
+    background-color: aqua;
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+input {
+    width: 25rem;
+    height: 4rem;
+}

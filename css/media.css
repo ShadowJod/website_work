@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+h1 {
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1 {
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+    width: 33%;
+}
+.box2 {
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    width: 33%;
+}
+.box3 {
+    height: 100px;
+    background-color: rebeccapurple;
+    text-align: center;
+    width: 33%;
+}
+.box4 {
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    width: 33%;
+}
+@media screen { 
+    
+}

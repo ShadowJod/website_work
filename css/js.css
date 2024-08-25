@@ -1,0 +1,17 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+    height: 30px;
+    width: 100px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px #1c6839;
+
+}
+button:hover {
+    background-color: red;
+    box-shadow: none;
+}

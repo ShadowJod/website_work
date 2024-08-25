@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    background-color: #f2f2f2;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    padding: 20px 20px;
+}
+h1 {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+h2 { 
+    text-align: center;
+}
+.same {
+    width: 100%;
+    border-radius: 5px;
+    background-color: lightgray ;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.pay {
+    padding: 10px 20px;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pay:hover {
+    background-color: red;
+}
+.gungun {
+    margin-left: 70%;
+}

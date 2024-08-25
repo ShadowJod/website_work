@@ -1,0 +1,55 @@
+/* h1 {
+    color: blue;
+    background-color: yellow;
+}
+body {
+    background-color: pink;
+}
+h3 {
+    color: yellow;
+}
+button {
+    background-color: blue;
+    box-shadow: 1px 1px 2px black;
+}
+
+.same {
+    color: aqua;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: rebeccapurple;
+    text-align: center;
+    border-radius: 25%;
+}
+div {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+} */
+
+.myclass {
+    background-color: blue;
+}
+
+.content {
+    background-color: green;
+}
+div {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+

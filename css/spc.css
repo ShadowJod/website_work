@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 255, 0.347);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 250px;
+}
+.same {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.same:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#rock {
+    background-color: burlywood;
+}
+#paper {
+    background-color: rgb(221, 228, 26);
+}
+#scissors {
+    background-color: royalblue;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+.score {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+article {
+    height: 60px;
+    background-color: lightgreen;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 550px;
+    border-radius: 10px;
+
+}
+#mssg { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article:hover {
+
+    background-color: green;
+}
+
+#your-score , #com-score {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}

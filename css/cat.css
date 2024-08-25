@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+nav {
+    background: lightcoral;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    /* position: fixed]; */
+}
+nav:hover {
+    background-color: rgba(255, 0, 0, 0.655);
+}
+nav input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size:medium;
+    
+}
+
+nav p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav button {
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(240, 231, 128, 0.461);
+    color: white;
+    font-weight: 700;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif    ; */
+}
+section {
+    height: 700px;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    
+}
+section .text  h1{
+    width: 70%;
+    position: relative;
+   top:250px;
+   left: 300px;
+   font-family: cursive;
+   font-size:50px;
+
+}
+section .text p {
+    width: 70%;
+    position: relative;
+   top:250px;
+   left: 300px;
+   font-family: cursive;
+   font-size:30px;
+
+}
+section .text img {
+    top:50px;
+    position: relative;
+   height: 300px;
+   border-radius: 50%;
+   left: 1050px;
+   box-shadow: 0px 0px 5px 2px black;
+  
+}
+section .text button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+section .text button:hover {
+    background-color: rgba(255, 0, 0, 0.655);
+}
+nav input:hover {
+    border: 1px solid rgba(255, 0, 0, 0.655);
+}
+footer {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 100px;
+}
+.footer1 {
+    font-weight: 700;
+    font-family: cursive;
+}
+footer .footer1 .footer-content {
+    font-family: sans-serif;
+    padding: 30px 0px 30px 0px;
+    font-weight: 500;
+}
+main {
+    padding: 20px 30px;
+}
+main .main {
+    background-color: whitesmoke;
+    height: 1050px;
+}
+main .main .content {
+    padding-bottom: 150px;
+    
+}
+main .main .content img {
+    float: left;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
+}
+main .main .content p {
+    word-spacing: 5px;
+    padding: 5px 10px;
+    clear: right;
+    display: flow-root;
+    font-family: sans-serif;
+    
+}
+main .main .content .first {
+    position: relative;
+    left: 300px;
+    top:40px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.507);
+}
+
+
+main .main .content .two {
+    position: relative;
+    left: 750px;
+    top:40px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.507);
+
+}
+
+main .main h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

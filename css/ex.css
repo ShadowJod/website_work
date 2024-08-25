@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    padding: 10rem 35rem;
+}
+#form{
+    background-color: aqua;
+    height: 300px;
+    width: 400px;
+}
+h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 10px;
+    
+}
+input {
+    height: 30px;
+    width: 100%;
+}
+button{
+    height: 30px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.newel {
+    height: 200px;
+    width: 400px;
+    background-color: blanchedalmond;
+}
+.newp {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+}

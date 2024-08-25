@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+header {
+    background-color: aquamarine;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.676);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+nav a {
+    color: bisque;
+    text-decoration: none;
+}
+section {  
+
+    /* background-color: bisque; */
+    background-image: url(/images/pcparts.webp);
+    background-repeat: no-repeat;
+   background-size: 100%;
+   background-attachment: fixed;
+   
+}
+section h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+
+footer {
+    background-color: rgba(0, 0, 255, 0.434);
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+section p {
+    font-size:50px;
+}
+/* font family  */
+/* serif/ */
+/* san serif */
+/* monospace */
+/* cursive */

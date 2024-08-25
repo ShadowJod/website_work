@@ -1,0 +1,50 @@
+ * {
+    margin: 0px;
+ }
+body {
+    background-color: #ccc;
+}
+header {
+   
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: white;
+    background-color: lightcoral;
+    text-align: center;
+    
+  
+}
+
+nav {
+    position:sticky;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.sirf {
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+section {
+    background-color: #ccc;
+    font-family: cursive;
+}
+h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+
+}
+footer {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content:space-evenly ;
+    height: 30px;
+    align-items: center;
+}
