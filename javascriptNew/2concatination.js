@@ -1,0 +1,12 @@
+console.log(10+"20");
+console.log("5"-5);
+console.log(5+ "nikhil");
+console.log(9 - "5");
+console.log("java" + "script");
+console.log(""+"");
+console.log("nikhil" - "mishra");
+console.log(""+ 3);
+console.log(true + true);
+console.log(false - false);
+console.log(false + false);
+console.log(true + false);

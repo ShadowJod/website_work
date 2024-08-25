@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: rgba(0, 0, 0, 0.84);
+            text-align: center;
+            margin-top: 10rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        #inputbutton {
+            font-size: 1rem;
+            border-radius: 2rem;
+            height: 2rem;
+            width: 20rem;
+            border: none;
+            cursor: pointer;
+        }
+        button {
+            font-size: 1rem;
+            border-radius: 2rem;
+            height: 2rem;
+            width: 5rem;
+            cursor: pointer;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <br>
+    <form>
+        <div>
+            <input type="text" id="inputbutton">
+            <button id="addbutton">ADD</button>
+        </div>
+        <section id="todoelement">
+            
+            
+        </section>
+    </form>
+    <script>
+        let todoele = document.querySelector("#todoelement");
+        let inputVal = document.querySelector("#inputbutton");
+        let addButton = document.querySelector("#addbutton");
+
+        let arrayoftodo = [];
+
+
+       
+        const addtodoelement = (e) =>{
+            e.preventDefault();
+
+            let removetodo = inputVal.value.trim();
+            arrayoftodo.push(removetodo);
+           
+            arrayoftodo = [... new Set(arrayoftodo)];
+            console.log(arrayoftodo);
+            localStorage.setItem("youtubeItems", JSON.stringify(arrayoftodo))
+
+            
+            const divelement = document.createElement("div")
+            divelement.classList.add("main-todo-div")
+            divelement.innerHTML = `<li>${inputVal.value} </li>   <button id="del">Delete</button>`;
+            todoele.append(divelement);
+            
+
+            inputVal.value = "";
+        }
+
+        addButton.addEventListener("click",(e)=>{
+            addtodoelement(e);
+        })
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            padding: 25rem;
+        }
+        button {
+            font-size: 1rem;
+           border-radius: 2rem;
+           height: 3rem;
+           transition: all 0.2s linear;
+           background-color: burlywood;
+        }
+        button:hover {
+            background-color: rgba(222, 184, 135, 0.507);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1">Add data to local storage </button>
+    <button id="btn2">Get data from local storage</button>
+    <button id="btn3">delete data from local storage</button>
+    <script>
+        let objectData = {
+            name : "nikhilMishra",
+            age : 19,
+            isPass : true,
+            marks : 30,
+        }
+
+
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        let btn3 = document.querySelector("#btn3");
+
+
+        let handle1 = () =>{
+            localStorage.setItem("objectdata", JSON.stringify(objectData))
+        }
+        let handle2 = () =>{
+            let name = JSON.parse(localStorage.getItem("objectdata"));
+            console.log(name);
+        }
+        let handle3 = () =>{
+           let remoVe=  localStorage.removeItem("objectdata");
+           console.log("Object Removed", remoVe);
+        }
+        
+        btn1.addEventListener("click", handle1);
+        btn2.addEventListener("click",handle2);
+        btn3.addEventListener("click", handle3);
+
+    </script>
+</body>
+</html>

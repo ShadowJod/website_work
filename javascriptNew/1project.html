@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: black;
+        
+        }
+        .rectangle {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            color: antiquewhite;
+            box-shadow: 1px 1px 4px black;
+            margin: 100px 500px;
+            
+            transition: all 0.6s linear;
+        }
+        button {
+            position: relative;
+                top: 270px;
+                left: 700px;
+        }
+        .transition0 {
+            border-radius: 10rem;
+            background-color: beige;
+        }
+        .transition {
+            /* border-radius: 5rem; */
+            translate: 30rem 0;
+            background-color: aqua;
+        }
+        .transition2 {
+            translate: -30rem 0;
+            background-color: brown;
+        }
+        .transition3 {
+            translate:  30rem 0;
+            background-color: blanchedalmond;
+        
+        }
+        .transition4 {
+            translate:  -30rem 0 ;
+            background-color: antiquewhite;
+        }
+        .transition5 {
+            translate: 0rem 0;
+            background-color: rgb(186, 203, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle"></div>
+    <button id="button"> CLick Here</button>
+    <button id="relod"> Reload</button>
+
+
+    <script>
+        let rectan = document.querySelector(".rectangle")
+        let button = document.querySelector("#button")
+        let relod = document.querySelector("#relod")
+        
+        let handle1 = ()=>{
+            console.log("click");
+            rectan.classList.add("transition0")
+        }
+       
+        let handle2 =()=>{
+            console.log("dvl");
+            rectan.classList.add("transition")
+        }
+        let handle3 = ()=>{
+            console.log("mouseover");
+            rectan.classList.add("transition2")
+        
+        }
+        let handle4 = () =>{
+            console.log("mosueout");
+            rectan.classList.add("transition5")
+        }
+        button.addEventListener("click", handle1);
+        button.addEventListener("dblclick", handle2)
+
+        rectan.addEventListener("mouseover",handle3)
+        rectan.addEventListener("mouseout",handle4)
+
+        relod.addEventListener("click",()=>{
+            location.reload();
+        })
+
+    </script>
+</body>
+</html>

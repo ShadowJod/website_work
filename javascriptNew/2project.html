@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: red;
+        
+        }
+        body {
+            padding: 15rem 40rem;
+            background-color: black;
+        }
+        #input{
+            font-size: 1.5rem;
+        }
+        .content {
+            font-size: 1.5rem;
+            padding-top: 2rem;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <input type="text" id="input">
+    <div class="content">
+        <p id="keypress"> key press : </p>
+        <p id="keytype"> key type : </p>
+        <p id="keycode"> key code : </p>
+    </div>
+    <script> 
+       const handlekeys = (event)=>{
+        console.log(event);
+        console.log("key Pressed :", event.key);
+        console.log("key code :", event.code);
+        console.log(" Event type : ", event.type);
+
+        document.querySelector("#keypress").textContent = `key pressed : ${event.key}`;
+        document.querySelector("#keytype").textContent = `key Type  : ${event.type}`;
+        document.querySelector("#keycode").textContent = `key code : ${event.code}`
+       }
+      var inpt = document.querySelector("#input")
+
+    inpt.addEventListener("keydown", handlekeys);
+    </script>
+</body>
+</html>

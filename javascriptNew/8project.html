@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            padding: 10rem 20rem;
+            
+        }
+        section {
+            background-color: aqua;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            color: black;
+        }
+        p{
+            font-size: 5rem;
+        }
+        .resetvalue>p{
+            font-size: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section>
+        <p id="timer">
+0
+        </p>
+        <div class="uniq">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+        <button id="get">Get Time</button>
+        <button id="re">Reset Time</button>
+    </div>
+    <div class="resetvalue"></div>
+    </section>
+
+
+    <script>
+        let interval;
+        let startcount = 0;
+        let start = document.querySelector("#start")
+        let namee = document.querySelector(".resetvalue")
+        let z = "";
+
+        let starttimer = () =>{
+            interval = setInterval(() => {
+                document.querySelector("#timer").textContent = startcount++
+            }, 1000);
+            
+        }
+
+        let stoptimer = () =>{
+            clearInterval(interval)
+        }
+
+        let resettimer = () =>{
+            startcount = 0;
+            document.querySelector("#timer").textContent = startcount
+            clearInterval(interval)
+        }
+
+        let gettime = () =>{
+            z = document.createElement("p");
+            
+            z.textContent = `your time is ${startcount-1}`
+            namee.append(z);
+
+
+        }
+
+        let retime = () =>{
+            namee.textContent = ""
+        }
+
+
+
+        start.addEventListener("click",()=>{
+            starttimer();
+        })
+        document.querySelector("#stop").addEventListener("click",()=>{
+            stoptimer();
+        })
+
+        document.querySelector("#reset").addEventListener("click",()=>{
+            resettimer();
+        })
+
+        document.querySelector("#get").addEventListener("click",()=>{
+            gettime();
+        })
+
+        document.querySelector("#re").addEventListener("click",()=>{
+            retime();
+        })
+    </script>
+</body>
+</html>

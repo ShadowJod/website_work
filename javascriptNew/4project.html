@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* color: black; */
+        }
+        body{
+           background-color: black;
+           color: white;
+           background-image: linear-gradient( to right top,#051937,#004d7a,#008793,#00bf72,#a8eb12);
+        }
+
+        section{
+            padding: 20rem 25rem;
+            text-align: center;
+        }
+        .copycode {
+            border: 1px solid white;
+            height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            padding-top: 3px;
+            background-color: lightseagreen;
+            color: black;
+        }
+        button {
+            height: 35px;
+            width: 70px;
+            border-radius: 5px;
+            border: none;
+           
+            
+        }
+        #buttondiv {
+            padding: 10px;
+        }
+        #h2div {
+            padding: 20px;
+        }
+        #mybttn {
+            margin-right: 30px;
+            background-color: lightblue;
+            transition:  all 0.4s linear;
+        }
+
+        #mybttn2 {
+            background-color: lightgray;
+            transition:  all 0.4s linear;
+        }
+        #mybttn:hover{
+            background-color: #004d7a;
+            color: white;
+        }
+        #mybttn2:hover {
+            background-color: rgba(255, 0, 0, 0.603);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="buttondiv">
+            <button id="mybttn">#051937</button>
+            <button id="mybttn2">#008793</button>
+        </div>
+        <h2 id="h2div"> Copy code here</h2>
+        <div class="copycode">
+            background-image: linear-gradient(to right,rgb(92,145,229),rgb(152,63,198))
+        </div>
+    </section>
+    <script>
+    let btn1 = document.getElementById("mybttn");
+    let btn2 = document.getElementById("mybttn2");
+    let rgb1 = "#000";
+    let rgb2= "#fff";
+    let copYcode = document.querySelector(".copycode")
+    let hexavalue = ()=>{
+        let value = "0123456789abcdef";
+        let code ="#"
+        for(let i = 0; i<6; i++){
+            code = code + value[Math.floor(Math.random()*16)];
+            
+        }
+        return code;
+    }
+   
+    const handle1 = () =>{
+       rgb1=  hexavalue();
+       console.log(rgb1);
+       document.body.style.backgroundImage = `linear-gradient(to right,${rgb1},rgb(152,63,198))`
+       btn1.textContent = `${rgb1}`;
+       copYcode.textContent = `background-image: linear-gradient(to right, ${rgb1} ,${rgb2})`
+
+    }
+    const handler2 = () =>{
+        rgb2 = hexavalue();
+        console.log(rgb2);
+        document.body.style.backgroundImage = `linear-gradient(to right,rgb(92,145,229),${rgb2})`
+        btn2.textContent = `${rgb2}`;
+        copYcode.textContent = `background-image: linear-gradient(to right, ${rgb1} ,${rgb2})`
+
+    }
+
+    btn1.addEventListener("click",handle1);
+    btn2.addEventListener("click", handler2);
+
+    copYcode.addEventListener("click",()=>{
+        navigator.clipboard.writeText()
+    })
+    </script>
+</body>
+</html>

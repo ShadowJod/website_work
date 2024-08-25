@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> This is Todo App</h1>
+<input type="text" id="inputbox">
+<button id="butn"> ADD</button>
+<div class="todoelement">
+   
+
+</div>
+
+    <script >
+        let inpUtBox = document.querySelector("#inputbox")
+        console.log(inpUtBox);
+        let butn = document.querySelector("#butn")
+        console.log(butn);
+        
+        const todo = ()=>{
+            console.log(inpUtBox.value);
+            let pel = document.createElement("p");
+            pel.textContent = inpUtBox.value;
+            let dot = document.querySelector(".todoelement")
+            console.log(dot);
+            dot.append(pel);
+
+
+            inpUtBox.value = "";
+        }
+
+        butn.addEventListener("click",()=>{
+            todo();
+        })
+
+        dot.addEventListener("click",(event)=>{
+            console.log(event.target);
+        })
+    </script>
+</body>
+</html>

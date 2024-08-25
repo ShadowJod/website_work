@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <ul id="lis">
+            <li> javascript</li>
+            <li> css</li>
+            <li>react</li>
+            <li>next</li>
+        </ul>
+        <p id="list"></p>
+    </section>
+    <script>
+        const getlistdetails = (e)=>{
+           
+            console.log(e.target);
+            document.querySelector("#list").innerHTML = e.target.innerText;
+        }
+
+
+
+        document.querySelector("#lis").addEventListener("click",getlistdetails)
+    </script>
+</body>
+</html>

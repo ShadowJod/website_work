@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.751);
+            text-align: center;
+        }
+        .container{
+            background-color: aqua;
+            height: 8rem;
+            width: 20rem;
+            border-radius: 2rem;
+            margin: 15rem 35rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="clock">
+
+        </p>
+    </div>
+    <script>
+        let currentTime = () =>{
+            let curtime = new Date().toLocaleTimeString();
+            document.querySelector(".clock").innerText = curtime;
+        }
+        currentTime();
+
+        let interval = setInterval(()=>{
+            currentTime();
+        },1000)
+
+        // setTimeout(()=>{
+        //     clearInterval(interval)
+        // },5000)
+
+    </script>
+</body>
+</html>
