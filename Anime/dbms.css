@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    min-height: 100vh;
+    background-image: url(images/WhatsApp\ Image\ 2024-04-24\ at\ 10.40.41_c4ce545d.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nato Serif JP' , serif;
+}
+#navbar{
+    display: flex;
+justify-content: center;
+   height: 78px;
+
+}
+a{ 
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Nato Serif JP' , serif;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+h2{
+   
+    color: whitesmoke;
+    padding-top: 3%;
+}
+.main-text{
+    color: whitesmoke;
+
+}
+.main{
+
+    margin-top: 165px;
+    margin-left: 100px;
+}
+#a{
+    font-size: 17px;
+}
+#b{
+    margin-top: 50px;
+    font-size: 50px;
+}
+#c{
+    margin-top: 70px;
+}
+.logo{
+    margin-right: 250px;
+    
+}
+.btn{
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid #f7f0d8;
+    padding: 9px 20px ;
+    border-radius: 80px;
+    line-height: 7.2px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 150px;
+}
+#c{
+    font-size: 19px; 
+margin-bottom: 30px;
+}
+#d{
+    background: whitesmoke;
+    color:black;
+    border: 1px solid #f7f0d8;
+    padding: 9px 20px ;
+    border-radius: 80px;
+    line-height: 7.2px;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+#d:hover{
+    transition: 1s;
+ transform: scale(1.2);
+    background-color: black;
+    color: whitesmoke;
+  
+
+}
+.btn:hover{
+    transition: 0.8s;
+    transform: scale(1.2);
+    background-color: whitesmoke;
+    color: black;
+}

@@ -1,0 +1,485 @@
+*  {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    height: 3.75rem;
+    background-color:#242428;
+    width: 100%;
+    display: flex;
+    color:aliceblue;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed; 
+    top: 0px;
+    cursor: pointer;
+   
+    
+    
+
+}
+.logo {
+    height: 3.75rem;
+    width: 6.25rem;
+}
+.pastelogo {
+    background-image: url(images/Netflix_Logo_RGB.png);
+    height: 1.87rem;
+    width: 100%;
+    background-size: cover;
+    margin-top: 0.625rem;
+
+}
+.navsearch {
+    width: 25rem;
+    
+    
+}
+.input {
+    width: 100%;
+    height: 1.875rem;
+    border: none;
+    border-radius: 0.625rem;
+    color: #242428;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.captions {
+    /* text-align: inline; */
+    display: flex;
+    width: 31.25rem;
+}
+.captions p { margin: 5px;
+    font-size:0.85rem;
+
+}
+.button {
+    width: 3.125rem;
+}
+button {
+    border: none;
+   background-color: #D64933;
+   height:1.875rem;
+   width: 100%;
+   border-radius: 10%;
+}
+/* part2 */
+
+.hero {
+    height:100vh;
+    background-color: black;
+  
+    background-size: cover;
+    opacity: 100;  background-image: url(images/Untitled\ design.png);
+    
+}
+
+
+
+
+.spotlight {
+    color: #D64933;
+    height: 18.75rem;
+    width: 100;
+    display: flex;
+    align-items: end;
+    margin-left: 3.125rem;
+    font-weight: 700;
+}
+.title {
+    color: aliceblue;
+    margin-left: 50px;
+    height: 150px;
+    width: 400px;
+}
+   
+.title p {
+    color:aliceblue;
+    width: 450px;
+    margin-top: 50px;
+    
+}
+#button1 {
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-top: 5px;
+   
+    
+}
+#button2 {
+    width: 80px;
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-top: 5px;
+
+} 
+.trending{
+    
+    height: 235px;
+    background-color: #242428;
+    background-image: url;
+    
+}
+.trending h3 {
+    color: #D64933;
+    display: flex;
+    
+  
+}
+.box {
+   
+    height: 235px;
+    background-color: #242428;
+/* background-image: url(luffy-laughing-one-5120x2880-12358.png);
+background-size: cover; */
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+
+#box {
+    height: 100%;
+    width: 165px;
+    background-image: url(images/Onepiece.jpg);
+    background-size: cover;
+    
+   
+}
+#box1{
+    height: 100%;
+    width: 165px;
+    background-image: url(images/Studentboy.jpg);
+    background-size: cover;
+
+}
+#box3 {
+    height: 100%;
+    width: 165px;
+    background-image: url(images/demonSSlayer.png);
+    background-size: cover;
+}
+#box4 {
+    height: 100%;
+    width: 165px;
+    background-image: url(images/SoloLeveling.png);
+    background-size: cover;
+}
+#box5 {
+    height: 100%;
+    width: 165px;
+    background-image: url(images/Strange.jpg);
+    background-size: cover;
+}
+#box6 {
+    height: 100%;
+    width: 165px;
+    background-image: url(images/Rename.jpg);
+    background-size: cover;
+}
+.fix {
+    height: 50px;
+    background-color: #242428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fix h2 {
+    color: #D64933;
+    
+}
+.headline {
+    height: 30px;
+    width: 100%;
+    display: flex;
+  justify-content: space-around;
+}
+/* abovefooter */
+
+.abovefooter {
+    height: 100px;
+    background-color: #242428;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-TOP: 100PX;
+    border-bottom: 2px solid black;
+
+}
+.sharemedia {
+    height: 70px;
+    width: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-top: 5px; */
+    display: flex; 
+    justify-content: space-around;
+
+}
+.sharemedia h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+.sharelogo {
+height: 80px;
+width: 80px;
+border-radius: 100%;
+background-color: #D64933;
+background-image: url(images/share-icon.gif);
+background-size: cover;
+}
+.sharemedia p {
+color: #D64933;
+font-weight: 700;
+margin-left: 50PX;
+
+}
+.buttonss {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.buttonss button {
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: none;
+    font-weight: 700;
+    margin-left: 45px;
+    color: aliceblue;
+}
+
+
+ .main p{
+    text-align: center;
+    margin-top: 30px;
+}
+.main h3 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+#one {
+   margin-left: 500px;
+}
+
+.abcd {
+    height: 120px;
+    width: 100%;
+    background-color:#242428
+    
+}
+#two {
+    height: 60px;
+    width: 100%;
+    background-color:#242428;
+    border-bottom: 2px solid red;
+    display: flex;
+    
+    align-items: center;
+
+}
+.paste{
+    background-image: url(Netflix_Logo_RGB.png);
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+    padding-top:10px;
+}
+#two p {
+    color: white;
+    margin: 20px;
+    
+}
+.a-z {
+    height: 60px;
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+
+}
+.all 
+{
+    background-color: #242428;
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    
+}
+.all p{
+    border: 1px solid black;
+    width: 30px;
+    text-align: center;
+    background-color: azure;
+    color: #242428;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 600;
+}
+.last { 
+    height: 200px;
+    background-color: #242428;
+
+}
+.first {
+    
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px; margin:0px 10px 0px 10px;
+
+}
+.second {
+    padding-top: 40px;
+    
+}
+.third {
+    margin-top: 5px;
+}
+.episode {
+    height: 500px;
+    width: 100%;
+    background-color: #242428;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+
+}
+.episode div {
+    height: 100%;
+ 
+    width: 270px;
+   
+
+}
+.episode h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.class {
+display: flex;
+flex-direction: column;
+}
+
+#om {
+    margin-top: 30px;
+    height: 120px;
+    width: 90px;
+    background-image: url(images/Rename.jpg);
+    background-size:cover;
+
+}
+#ram {
+    margin-top: 30px;
+    height: 120px;
+    width: 90px;
+    background-image: url(images/DemonSlayer.jpg);
+    background-size:cover;
+}
+#sita {
+    margin-top: 30px;
+    height: 120px;
+    width: 90px;
+    background-image: url(images/JujutsuKaIsen.png);
+    background-size:cover;
+
+}
+.money p {
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   font-weight: 500;
+   padding-left: 120px;
+   padding-top: 30px;
+}
+.money {
+    height: 100%;
+    width: 100%;
+}
+.money button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-left: 110px;
+    background-color:#D64933;
+    margin-top: 10px;
+
+}
+.main {
+    height: 350px;
+   width: 100%;
+    background-color: #242428;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.tanjiro {
+    height: 350px;
+    width: 200px;
+}
+.pastetanjiro {
+height: 100%;
+width: 100%;
+background-image: url( images/Tanjiro-Kamado.webp);
+background-size: cover;
+}
+.cmt1 {
+    height:100%;
+    width:300px;
+  
+   
+}
+.firsts {
+    height: 100px;
+    width: 100%;
+}
+.cmt1 button {
+    background-color:#D64933;
+    width: 130px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+.firsts p {
+   
+    width: 100%;
+    font-weight: 600;
+    margin-top: 0px;
+    padding-top: 40px;
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.seconds {
+    height: 200px;
+    width: 250px;
+    background-color: #D64933;
+    border-radius: 10px;
+
+}
+.seconds h3 {
+    padding-top: 10px;
+}
+.seconds p {
+
+    text-align: center;
+}
+.firsts {
+    text-align: center;
+
+}
+.button a {
+    text-decoration: none;
+}
+#nikhil{
+    text-decoration: none;
+    font-weight: 700;
+    color: #D64933;
+    font-size: 18px;
+}
+.home a{
+    text-decoration: none;
+}
